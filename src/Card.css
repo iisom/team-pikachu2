@@ -1,0 +1,161 @@
+@keyframes fadeIn { /* Initially sets animation */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+  
+body {
+  background-image: url("https://wallpapercave.com/wp/Px8NUSM.jpg");
+  background-size: cover;
+}
+  .flex-container {
+    flex-flow: wrap;
+    display: flex;
+    justify-content: left;
+    align-items:start;
+    height: 100vh;
+  }
+  
+  .pokemon-card {
+    width: 300px;
+    background-color: #f8d030;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+    opacity: 0; /* Initially hidden */
+    animation: fadeIn 5s ease forwards; /* Apply animation */
+    margin-top: 50px;
+  }
+
+  .pokemonCardsDisplay1 {
+    float: left;
+    margin: 10px;
+  }
+
+  .pokemonCardsDisplay2 {
+    float: right;
+    margin: 10px;
+  }
+
+  .container :hover {/*slightly lifts card when hovered*/
+    transform: translateY(-5px);
+  }
+  
+  .pokemon-header {
+    background-color: #f5e9c1;
+    padding: 10px;
+  }
+  
+  .pokemon-name {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .pokemon-type, .pokemon-hp {
+    margin: 5px 0;
+    font-size: 18px;
+    color: #666;
+  }
+  
+  .pokemon-image {
+    padding: 20px;
+  }
+  
+  .pokemon-image img {
+    width: 150px;
+    height: auto;
+  }
+  
+  .pokemon-moves {
+    background-color: #f0e0a0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #666;
+  }
+  
+  .stat {
+    text-align: center;
+  }
+  
+  .stat-label {
+    font-size: 16px;
+    color: #333;
+  }
+
+  button{
+    border-radius: 5px;
+    border: none;
+    color: #ffffff;
+    background-color:#f8d030;
+    padding: 5px;
+    margin-left: 5px;
+  }
+
+  input:focus {
+    background-color: rgb(247, 247, 204);
+  }
+ 
+  h1 {
+    color: #ffcb05;
+  }
+
+  h3 {
+    color: #ffcb05;
+    padding: 10px;
+  }
+
+  .pokeNameList {
+    background-color: #3D7DCA;
+    overflow-y: scroll;
+    height: 500px;
+    max-width: 250px;
+    padding-left: 10px;
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+
+  .extender {
+    width: 20%;
+  }
+
+  .inputBox {
+    padding-left: 50px;
+    margin-bottom: 5px;
+  }
+
+  .formArea {
+    justify-items: auto;
+    background-color: #3D7DCA;
+    border-radius: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5px;
+    width: 250px;
+  }
+
+  
+.section{
+  background-color: #f8d030;
+}
+
+#battleButton {
+  border-radius: 5px;
+  border: none;
+  color: #ffffff;
+  background-color:#f8d030;
+  padding: 5px;
+  margin-left: 5px;
+}
+
+.hidden {
+  display: none;
+}
