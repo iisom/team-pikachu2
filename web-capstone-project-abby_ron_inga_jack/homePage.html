@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <!-- make sure to update with your page name -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="generalCSS.css">
+    <link rel="stylesheet" href="HomePage.css">
+    <!-- no need to add HomePage.css-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script defer src="randomImage.js" type="text/javascript"></script>
+    <!-- note this piece is my personal javascript to generate the featured images -->
+</head>
+
+<body>
+    <!-- Page title and Met Logo -->
+    <header>
+        <div id="pageTitle">
+            <img src="https://static01.nyt.com/images/2016/02/20/arts/20BREUER/20BREUER-master768-v2.jpg" alt="Met Logo"
+                style="width:60; height:80px;">
+            Met Hub
+        </div>
+    </header>
+    <!-- Navigation Bar -->
+    <nav class="menu menu-1">
+        <ul>
+            <li><a href="homePage.html" class="navLinks active">Home</a></li>
+            <li><a href="search.html">Search Met Catalogue</a></li>
+            <li><a href="visit.html">Plan A Visit</a></li>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="https://maps.metmuseum.org/">Museum Map</a></li>
+        </ul>
+    </nav>
+    <div>
+    <!-- remember to move the class="navLinks active" to your page of the nav bar -->
+    <!-- copy text above for general page standardization -->
+
+    <!-- Met Museum photo and overlaid welcome text -->
+    <div class="container">
+        <div id="photo">
+            <div id="Welcome" class="subtitle">Welcome to the Met Hub</div>
+            <div id="Gateway" class="subtitle">Your gateway to the world-renowned Metropolitan Museum of Art</div>
+        </div>
+        <img src="met2.jpg" alt="met" width="100%" height="50%">
+    </div>
+    <div class="contentBox">
+    <!-- About Us Text  -->
+    <section class="content" id="homeBody">
+            <div id="AboutUs"><strong>About Us</strong></div>
+            <p>
+                Step into a world where history, culture, and creativity converge at the Metropolitan Museum of Art, one of
+                the most revered institutions in the realm of art and culture. At Met Hub, we're dedicated to sharing the
+                magic of this iconic museum with the world. Our mission is to bridge the gap between you and the Met,
+                offering a digital haven where you can immerse yourself in the richness of its collection, delve into its
+                storied past, and embark on a journey of exploration and discovery. 
+            </p>
+            <p>
+                The Metropolitan Museum of Art stands as a testament to the enduring power of human creativity, housing over
+                two million works of art that span five millennia and encompass virtually every civilization on Earth. From
+                ancient artifacts to contemporary masterpieces, the Met's collection is a treasure trove of inspiration,
+                offering glimpses into the lives, cultures, and stories of people throughout history.<br>
+            </p>
+            <p>
+                At Met Hub, we understand that not everyone has the opportunity to visit the Met Museum in person. That's
+                why we've created this platform—to bring the museum experience to you, wherever you are in the world.
+                Whether you're a seasoned art aficionado or a curious soul eager to uncover the wonders of the world, Met
+                Hub is your passport to the extraordinary.
+            </p>
+    </section>
+    </div>
+    <!-- slideshow code -->
+    <div class = "slideBox">
+        <p class ='subHeader'>Featured Items from the Collection</p>
+        <section id = "slideShow">
+                    <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 12</div>
+                        <img id = "img1" src="img1.jpg" style="max-height: 350px; max-width: 100%" >
+                        <div id="text1" class="title"></div>
+                        <div id="artist1" class='caption'></div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 12</div>
+                        <img id = "img2" src="img2.jpg" style="max-height: 350px; max-width: 100%">
+                        <div id="text2"  class="title"></div>
+                        <div id="artist2" class='caption'></div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 12</div>
+                        <img id = "img3" src="img3.jpg" style="max-height: 350px; max-width: 100%">
+                        <div id="text3"  class="title"></div>
+                        <div id="artist3" class='caption'></div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">4 / 12</div>
+                        <img id = "img4" src="img4.jpg" style="max-height: 350px; max-width: 100%">
+                        <div id="text4"  class="title"></div>
+                        <div id="artist4" class='caption'></div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">5 / 12</div>
+                        <img id = "img5" src="img5.jpg" style="max-height: 350px; max-width: 100%">
+                        <div id="text5"  class="title"></div>
+                        <div id="artist5" class='caption'></div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">6 / 12</div>
+                        <img id = "img6" src="img6.jpg" style="max-height: 350px; max-width: 100%">
+                        <div id="text6" class="title"></div>
+                        <div id="artist6" class='caption'></div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">7 / 12</div>
+                        <img id = "img7" src="img7.jpg" style="max-height: 350px; max-width: 100%">
+                        <div id="text7" class="title"></div>
+                        <div id="artist7" class='caption'></div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">8 / 12</div>
+                        <img id = "img8" src="img8.jpg" style="max-height: 350px; max-width: 100%">
+                        <div id="text8"  class="title"></div>
+                        <div id="artist8" class='caption'></div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">9 / 12</div>
+                        <img id = "img9" src="img9.jpg" style="max-height: 350px; max-width: 100%">
+                        <div id="text9" class="title"></div>
+                        <div id="artist9" class='caption'></div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">10 / 12</div>
+                        <img id = "img10" src="img10.jpg" style="max-height: 350px; max-width: 100%">
+                        <div id="text10"  class="title"></div>
+                        <div id="artist10" class='caption'></div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">11 / 12</div>
+                        <img id = "img11" src="img11.jpg" style="max-height: 350px; max-width: 100%">
+                        <div id="text11" class="title"></div>
+                        <div id="artist11" class='caption'></div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">12 / 12</div>
+                        <img id = "img12" src="img12.jpg" style="max-height: 350px; max-width: 100%">
+                        <div id="text12" class="title"></div>
+                        <div id="artist12" class='caption'></div>
+                    </div>
+
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>
+
+                    <!-- The dots/circles -->
+                    <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                    <span class="dot" onclick="currentSlide(7)"></span>
+                    <span class="dot" onclick="currentSlide(8)"></span>
+                    <span class="dot" onclick="currentSlide(9)"></span>
+                    <span class="dot" onclick="currentSlide(10)"></span>
+                    <span class="dot" onclick="currentSlide(11)"></span>
+                    <span class="dot" onclick="currentSlide(12)"></span>
+                    </div>
+        </section>
+        <!-- footer -->
+        <footer>
+            <div>© 2000-2024 The Met Hub. All rights reserved.</div>
+        </footer>
+</div>
+</div>
+</body>
+
+</html>

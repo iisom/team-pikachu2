@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search For Items At The MET</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="generalCSS.css">
+    <link rel="stylesheet" href="search.css">
+    <script defer src="apiUtil.js"></script>
+</head>
+
+<body>
+  <header>
+    <div id="pageTitle">
+        <img src="https://static01.nyt.com/images/2016/02/20/arts/20BREUER/20BREUER-master768-v2.jpg" alt="Met Logo"
+            style="width:60; height:80px;">
+        Met Hub
+    </div>
+  </header>
+  <nav class="menu menu-1">
+      <ul>
+        <li><a href="homePage.html" >Home</a></li>
+        <li><a href="search.html" class="navLinks active">Search Met Catalogue</a></li>
+        <li><a href="visit.html">Plan A Visit</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="https://maps.metmuseum.org/">Museum Map</a></li>
+  </ul>
+  </nav>
+  <section style="background-color: #e6e6e6; min-height: 100vh; padding:5%">
+    <form id="searchForm" name="searchForm" class="form" method = "get">
+    <fieldset>
+      <legend>Criteria to Search for Items At The Met</legend>
+      <label for="searchKeyWord">Search By Key Word:</label>
+      <input type="text" id="searchKeyWord" name="searchKeyWord" form="searchForm"><br>
+      <label for="searchArtist">Search By Artist:</label>
+      <input type="text" id="searchArtist" name="searchArtist" form="searchForm"><br>
+      <label for="searchCountry">Country of Origin:</label>
+      <input type="text" id="searchCountry" name="searchCountry" form="searchForm"><br>
+      <button type="submit" id="searchSubmit" name = "searchSubmit">Submit</button>
+    </fieldset>
+  </form>
+  <form id="searchResults" name="searchResults" class="returnedItems">
+    <fieldset id="searchFieldSet" >
+      <legend>Items Found Searching The Met's Archives</legend>
+      <section id='resultSection' name="resultSection" class="canvas">
+
+      </section>
+      <header></header>  
+    </fieldset>
+  </form>
+
+  <footer>
+    <div>© 2000–2024 The Met Hub. All rights reserved.</div>
+    </footer>
+</section>
+</body>
+</html>

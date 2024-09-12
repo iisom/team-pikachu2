@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Plan A Visit</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="generalCSS.css" />
+    <link rel="stylesheet" href="visit.css" />
+    <script defer src="visit.js"></script>
+  </head>
+  <header>
+    <div id="pageTitle">
+      <img
+        src="https://static01.nyt.com/images/2016/02/20/arts/20BREUER/20BREUER-master768-v2.jpg"
+        alt="Met Logo"
+        style="width: 60; height: 80px"
+      />
+      Met Hub
+    </div>
+  </header>
+  <nav class="menu menu-1">
+    <ul>
+      <li>
+        <a href="homePage.html" id="home_link" >Home</a>
+      </li>
+      <li><a href="search.html">Search Our Catalogue</a></li>
+      <li><a href="visit.html" class="navLinks active">Plan A Visit</a></li>
+      <li><a href="donate.html">Donate</a></li>
+      <li><a href="https://maps.metmuseum.org/">Museum Map</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <div id="photo">
+      <div id="title" class="subtitle">Plan Your Visit</div>
+    </div>
+    <img
+      src="https://cdn.sanity.io/images/cctd4ker/production/802fb9783f2d0d918c8473c780d09b820276430b-4845x1615.jpg?w=1920&q=75&auto=format"
+      alt="met"
+      width="100%"
+      height="40%"
+    />
+  </div>
+
+  <body>
+    <div class="table-wrapper">
+      <table>
+        <tr>
+          <td>Adults</td>
+          <td>$30</td>
+        </tr>
+        <tr>
+          <td>Seniors (65 and over)</td>
+          <td>$22</td>
+        </tr>
+        <tr>
+          <td>Students</td>
+          <td>$17</td>
+        </tr>
+        <tr>
+          <td>Children (under 12)</td>
+          <td>Free</td>
+        </tr>
+        <tr>
+          <td>Members & Patrons</td>
+          <td>Free</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="button-wrapper">
+      <span id="label">Purchase Tickets:</span>
+      <button id="button1" onclick="goToWebsite1()">Buy Tickets Only</button>
+      <button id="button2" onclick="goToWebsite2()">Become a Member</button>
+    </div>
+
+    <h3 id="headers1">Locations and Hours</h3>
+
+    <div class="image-container">
+      <a
+        id="location1"
+        href="https://www.metmuseum.org/plan-your-visit/met-fifth-avenue"
+        >The Met Fifth Avenue</a
+      >
+      <img
+        id="image"
+        src="https://cdn.sanity.io/images/cctd4ker/production/b8a5e07c166342e1c7f6fe30b8c45d64fea69ea5-4096x2326.jpg?w=1080&q=75&fit=clip&auto=format"
+        width="600"
+        height="350"
+      />
+      <span style = "padding-top: 10px">Address: 1000 Fifth Avenue 82nd Street New York, NY, 10028</span>
+      <div>Hours: Sunday–Tuesday and Thursday: 10am–5pm Closed: Wednesday</div>
+    </div>
+    <div class="image-container">
+      <a
+        id="location2"
+        href="https://www.metmuseum.org/plan-your-visit/met-cloisters"
+        >The Met Cloisters</a
+      >
+      <img
+        id="image"
+        src="Capture.PNG"
+        width="600"
+        height="350"
+      />
+      <span
+        >Address: 99 Margaret Corbin Drive Fort Tryon Park New York, NY,
+        10040</span
+      >
+      <div>Hours: Thursday–Tuesday: 10am–5pm Closed: Wednesday</div>
+    </div>
+  </body>
+
+  <footer>© 2000–2024 Met Hub. All rights reserved.</footer>
+</html>

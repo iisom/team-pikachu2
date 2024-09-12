@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="generalCSS.css">
+    <link rel="stylesheet" href="donate.css">
+    <script defer src="donate.js"></script>
+    <title>Donate</title>
+</head>
+<header>
+  <div id="pageTitle">
+    <img
+      src="https://static01.nyt.com/images/2016/02/20/arts/20BREUER/20BREUER-master768-v2.jpg"
+      alt="Met Logo"
+      style="width: 60; height: 80px"
+    />
+    Met Hub
+  </div>
+</header>
+<nav class="menu menu-1">
+  <ul>
+    <li>
+      <a href="homePage.html" id="home_link" >Home</a>
+    </li>
+    <li><a href="search.html">Search Our Catalogue</a></li>
+    <li><a href="visit.html">Plan A Visit</a></li>
+    <li><a href="donate.html" class="navLinks active">Donate</a></li>
+    <li><a href="https://maps.metmuseum.org/">Museum Map</a></li>
+    
+  </ul>
+</nav>
+<div class="container">
+  <div id="photo">
+    <div id="title" class="subtitle">Donate</div>
+  </div>
+  <img
+    src="11.jpg"
+    alt="met"
+    width="100%"
+    height="100"
+  />
+</div>
+<section class="content"> 
+<body>
+<h1> Donate to "The Met"</h1>
+   <p id="p1"> Your support helps sustain the Museum’s extraordinary level of programming, conservation, and research, enabling millions of visitors to experience the power of art.</p>
+    <p id="p2">Your donation today plays a vital role in The Met’s future, and we couldn’t be more grateful.</p>
+    <p id="p3">Thank you!</p>
+    
+   <h2> Suggested Donation Levels </h2>
+   <section id="dollar_amounts">
+   <button class="value" onclick="donations(event)">$5</button>
+   <button class="value" onclick="donations(event)">$10</button>
+   <button class="value" onclick="donations(event)">$25</button>
+   <button class="value" onclick="donations(event)">$50</button>
+   <button class="value" onclick="donations(event)">$100</button>
+</section>
+<fieldset>
+    <legend id="heading">Donation Information</legend>
+    <form id="donationForm">
+        <div>
+            <label for="donorName">Name:</label>
+            <input type="text" id="donorName" name="donorName" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address">
+        </div>
+        <div>
+            <label for="card">Credit Card:</label>
+            <input type="text" id="card" name="credit_card" required>
+            <button id="submitform" type="submit">Submit</button>
+        </div>
+    </form>
+</fieldset>    
+</body>
+<footer>© 2000–2024 Met Hub. All rights reserved.</footer>
+</html>

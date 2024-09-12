@@ -1,0 +1,99 @@
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+
+  }
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    background: linear-gradient(#ffffff, #e6e6e6);
+}
+
+input{
+    width: 98%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button{
+    background-color:  rgb(194, 193, 193);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: 'Open Sans Condensed', sans-serif;
+  }
+
+button:hover {
+    background-color: #f72c21;
+}
+/* sets background gradient */
+body {
+    /* background: linear-gradient(#ffffff, #e6e6e6); */
+    /* Replace colors with your desired gradient */
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* sets footer formatting */
+footer {
+    margin-top: 60px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    color: rgb(61, 59, 59);
+}
+
+/* sets the default body margins, if this causes issues with your page, we can remove from here */
+body,
+header {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 10;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+}
+
+.container img {
+    max-width: 100%;
+    height: 500px;
+}
+
+#photo{
+    font-family: "Playfair Display", serif;
+
+    position: absolute;
+    top:40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+
+ #resultSection {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
